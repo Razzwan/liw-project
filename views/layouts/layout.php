@@ -21,8 +21,8 @@ use liw\core\Liw;
 
 <div class = "left_menu_wrap"></div>
 <nav id= "left_menu">
-    <h1> <a href = "/" id="logo">main</a></h1>
-    <li><a href="/test" class="button">test</a></li>
+    <h1> <a href = "/">main</a></h1>
+    <li><a href="/test">test</a></li>
 </nav>
 
 <div id="main_wrapper">
