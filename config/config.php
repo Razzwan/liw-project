@@ -11,17 +11,17 @@
 
 return $config = [
 
-    'site_name' => 'MIRA',   //Название сайта
+    'site_name' => 'LIW',    //Название сайта
     'def_route' => 'main',   //Контроллер по умолчанию (в нижнем регистре)
     'def_layout'=> 'layout', //Вид по умолчанию
     'def_lang'  => 'ru',     //Язык
-    'domain'    => 'http://liw.loc', //ваш домен полностью
+    'domain'    => '',       //ваш домен полностью (https://mysite.ru или localhost)
     
     // Подключение к базе данных
     'db' => [
         'host' => '127.0.0.1',
         'user' => 'root',
-        'pass' => '987654321',
-        'name' => 'mira',
+        'pass' => '',
+        'name' => '',
     ],
 ];
