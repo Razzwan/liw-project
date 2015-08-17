@@ -1,7 +1,6 @@
 <?php
 namespace web\controllers;
 
-use liw\core\base\model\ConnectPDO;
 use liw\core\Controller;
 
 class MainController extends Controller
