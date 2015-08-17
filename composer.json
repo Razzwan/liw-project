@@ -16,6 +16,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "liw/core": "dev-master"
+        "liw/core": "1.0"
     }
 }
