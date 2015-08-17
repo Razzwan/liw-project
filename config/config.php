@@ -11,17 +11,17 @@
 
 return $config = [
 
-    'site_name' => 'LIW',    //Название сайта
+    'site_name' => 'LIW',   //Название сайта
     'def_route' => 'main',   //Контроллер по умолчанию (в нижнем регистре)
     'def_layout'=> 'layout', //Вид по умолчанию
     'def_lang'  => 'ru',     //Язык
-    'domain'    => '',       //ваш домен полностью (https://mysite.ru или localhost)
+    'domain'    => 'http://liw.loc',
     
     // Подключение к базе данных
     'db' => [
-        'host' => '127.0.0.1',
+        'host' => 'localhost',
         'user' => 'root',
-        'pass' => '',
-        'name' => '',
+        'pass' => '987654321',
+        'name' => 'mira',
     ],
 ];
