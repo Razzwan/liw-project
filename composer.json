@@ -1,0 +1,21 @@
+{
+    "name": "liw/liw-project",
+    "description": "The Liw Framework",
+    "keywords": ["framework", "liw", "project template"],
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/Razzwan/liw-project",
+    "support": {
+        "issues": "https://github.com/Razzwan/liw-project/issues"
+    },
+    "authors": [
+        {
+            "name": "Pavel Belik",
+            "email": "razvanlomov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "liw/core": "dev-master"
+    }
+}

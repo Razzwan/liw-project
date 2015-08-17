@@ -1,0 +1,7 @@
+<?php
+
+require __DIR__ . '/core/boot.php'; //Файл загрузчик модулей приложения
+
+\liw\creator\App::run();
+
+
