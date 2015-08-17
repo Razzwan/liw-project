@@ -14,8 +14,7 @@
             "email": "razvanlomov@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "liw/core": "1.0"
+        "liw/core": "dev-master"
     }
 }
