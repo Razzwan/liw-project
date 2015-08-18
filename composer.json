@@ -15,9 +15,9 @@
         }
     ],
     "require": {
-        "liw/core": "1.0.*",
-        "liw/liw-installer":"dev-master",
-        "components/bootstrap-default":"3.3.*"
+        "liw/core": "dev-master",
+        "liw/liw-installer":"dev-master"/*,
+        "components/bootstrap-default":"3.3.*"*/
     },
     "repositories":[
         {
