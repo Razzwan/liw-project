@@ -15,6 +15,8 @@ use liw\core\Liw;
           href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen"
           href="/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="/css/dev.css" />
     <title><?=$this->title?></title>
 </head>
 <body>
@@ -42,6 +44,7 @@ use liw\core\Liw;
 <div class="js-block">
     <script src="/js/jquery.js" type="text/javascript" ></script>
     <script src="/js/bootstrap.min.js" type="text/javascript" ></script>
+    <script src="/js/js.js" type="text/javascript" ></script>
 </div>
 
 <div id="tooltip"></div>
