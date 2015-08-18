@@ -16,6 +16,18 @@
     ],
     "require": {
         "liw/core": "1.0.*",
+        "liw/liw-installer":"dev-master",
         "components/bootstrap-default":"3.3.*"
+    },
+    "repositories":[
+        {
+            "type":"git",
+            "url":"https://github.com/Razzwan/liw-installer"
+        }
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "liw\\composer\\Installer::postCreateProject"
+        ]
     }
 }
