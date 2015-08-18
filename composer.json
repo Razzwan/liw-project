@@ -27,7 +27,7 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
-            "liw\\composer\\Installer::postCreateProject"
+            "liw\\installer\\Installer::postCreateProject"
         ]
     }
 }
