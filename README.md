@@ -3,7 +3,22 @@
 Мини фрэймворк для обучения. Присоединяйся! ;)
 
 ## Установка: ##
-1. Установить composer
-2. выполнить: заменив "path/to/your/www/" на путь к папке доступной из web, а "newFolder" на имя вышего проекта
+1. Установите composer: https://getcomposer.org/doc/00-intro.md
 
-#### php composer.phar create-project liw/liw-project path/to/your/project/newFolder --stability "dev" ####
+2. Перейдите при помощи терминала(linux/osx) или GitBash(windows) в папку доступную из веб (www, public...):
+
+##### cd /path/to/public/folder #####
+
+3. Выполните в терминале(linux/osx) или GitBash(windows) команду
+
+##### php composer.phar create-project liw/liw-project newProject #####
+
+Composer установит проект в папку newProject.
+Можно работать.
+
+## Обновление компонентов ##
+Выполните в терминале(linux/osx) или GitBash(windows) команду:
+
+##### php composer.phar update #####
+
+Composer установит последние версии компонентов.
