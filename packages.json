@@ -14,8 +14,5 @@
             "name": "Pavel Belik",
             "email": "razvanlomov@gmail.com"
         }
-    ],
-    "require": {
-        "liw/core": "1.0.*"
-    }
+    ]
 }
