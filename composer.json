@@ -16,8 +16,8 @@
     ],
     "require": {
         "liw/core": "dev-master",
-        "liw/liw-installer":"dev-master"/*,
-        "components/bootstrap-default":"3.3.*"*/
+        "liw/liw-installer":"dev-master",
+        "components/bootstrap-default":"3.3.*"
     },
     "repositories":[
         {
