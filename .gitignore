@@ -1,7 +1,7 @@
 .idea
 .gitignore
 composer.lock
-/config
+
 /vendor
 liw.bat
 plan-tz.md
