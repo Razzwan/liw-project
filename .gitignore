@@ -1,3 +1,4 @@
 .idea
 .gitignore
 composer.lock
+/config
