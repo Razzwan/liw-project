@@ -1,21 +1,25 @@
-<?php
-use liw\core\Liw;
-
-/**
- * $this - liw\core\base\View
- * @var $test
- */
-?>
-
-<div class="jumbotron">
-    <h1>The <span class="logo">L</span>ife <span class="logo">I</span>s <span class="logo">W</span>onderful</h1>
-    <h2 class="text-success">Framework</h2>
-    <p class="text-muted">Жизнь начинается с любви</p>
-    <p><a class="btn btn-primary btn-lg" href="/more" role="button">Узнать больше &raquo;</a></p>
-</div>
-
 <div class="container">
     <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="text-muted">MVC-архитектура, понятная новичку</h2>
+            <p>В разработке</p>
+            <p><a class="btn btn-default" href="/mvc" role="button">Подробнее об MVC - архитектуре &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-muted">Маршрутизация с многоуровневым доступом</h2>
+            <p>В разработке </p>
+            <p><a class="btn btn-default" href="/levels" role="button">Тестировать многоуровневый доступ &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-muted">Встроенный вывод ошибок</h2>
+            <p>Вы всегда будете проинформированы, какая ошибка допущена в вашем коде.</p>
+            <p><a class="btn btn-default" href="/no_found" role="button">Тестировать ошибку &raquo;</a></p>
+        </div>
+    </div>
+
+    <hr>
+
     <div class="row">
         <div class="col-md-4">
             <h2>Установи и пользуйся</h2>
@@ -40,4 +44,3 @@ use liw\core\Liw;
 
     <hr>
 </div> <!-- /container -->
-

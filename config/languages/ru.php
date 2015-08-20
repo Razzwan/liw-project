@@ -43,8 +43,8 @@ return $lang = [
         'verify'     => 'Ошибка авторизации!',
     ],
     'label' => [
-        'login'         => 'username',
-        'pass'          => 'password',
+        'login'         => 'Login',
+        'pass'          => 'Password',
         'title_article' => 'Название статьи:',
         'text_article'  => 'Текст статьи:',
     ],

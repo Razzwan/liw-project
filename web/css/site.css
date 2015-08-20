@@ -6,12 +6,12 @@
 * выделенны 2мя пробелами
 */
 @font-face {
-    font-family: Andika; /* Гарнитура шрифта */
-    src: url(../fonts/Andika-R.ttf); /* Путь к файлу со шрифтом */
+    font-family: Andika;
+    src: url(../fonts/Andika-R.ttf);
 }
 @font-face {
-    font-family: MeriendeOne-Regular; /* Гарнитура шрифта */
-    src: url(../fonts/MeriendaOne-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: MeriendeOne-Regular;
+    src: url(../fonts/MeriendaOne-Regular.ttf);
 }
 html,
 body {
@@ -25,6 +25,7 @@ body {
 */
 #main_wrapper {
     min-height: 100%;
+    padding-top: 50px;
     overflow-y: auto;
 }
 .jumbotron{
@@ -75,4 +76,51 @@ footer{
     -moz-box-shadow: 0 0 14px #f00;
     -webkit-box-shadow: 0 0 14px #f00;
     box-shadow: 0 0 14px #f00;
+}
+.indent50{
+    padding-left: 50px;
+    text-indent: -16px;
+}
+.reg{
+    background-color: #FFFFFF;
+    border: solid 2px #204020;
+    border-radius:3px;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        -khtml-border-radius:3px;
+    box-shadow: 0 0 40px #107010;
+        -moz-box-shadow: 0 0 40px #107010;
+        -webkit-box-shadow: 0 0 40px #107010;
+    color: #105010;
+    margin: 80px 10% 10px 10%;
+    min-height: 150px;
+    opacity: 0.9;
+    padding: 20px;
+    text-align: center;
+}
+.input-center{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.reg .error_reg{
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+#tooltip{
+    position: absolute;
+    display: none;
+    top:0px;
+    left:0px;
+    background-color: #000;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    opacity : 0.7;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    z-index: 9999;
 }

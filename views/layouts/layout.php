@@ -55,15 +55,31 @@ use liw\core\Liw;
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
+            <?php if (Liw::$user['login']): ?>
+                <div class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <a href="/user" class="logo"><?=$_SESSION['user']['login'];?></a>
+                    </div>
+                    <div class="form-group">
+                        <a href="/logout" class="btn btn-success">Выход</a>
+                    </div>
+
                 </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Войти</button>
-            </form>
+            <?php elseif(!Liw::$user['login']): ?>
+                <form action="/login" method="post" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input name="login" id="login" type="text" placeholder="<?=Liw::$lang['label']['login'];?>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input name="pass" id="pass" type="password" placeholder="<?=Liw::$lang['label']['pass'];?>" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Войти" class="btn btn-success">
+                    </div>
+
+                </form>
+            <?php endif; ?>
+
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
@@ -79,6 +95,8 @@ use liw\core\Liw;
     <p>&copy; Razzwan <span class="logo">LIW</span> 2015</p>
 </footer>
 
+<div id="tooltip"></div>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -89,5 +107,6 @@ use liw\core\Liw;
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 <script src="/js/dev.js" type="text/javascript" ></script>
+<script src="/js/js.js" type="text/javascript" ></script>
 </body>
 </html>

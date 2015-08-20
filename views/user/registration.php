@@ -7,42 +7,44 @@ use liw\core\Liw;
  */
 ?>
 
-<div class = "reg">
-    <form action="/registration" method="post">
-        <div id="tooltip"></div>
-        <table>
-            <caption><?=Liw::$lang['button']['registration']?>:</caption>
-            <tr>
-                <td><input
-                        type="text"
-                        id="login"
-                        name = "login"
-                        placeholder="<?=Liw::$lang['label']['login'];?>"
-                        data-tooltip="<?=Liw::$lang['message']['hide_login']?>"
-                        value="<?=$login?>"
-                        class="input"
-                        autofocus                        />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input
-                        type="password"
-                        id="password"
-                        name = "pass"
-                        placeholder="password"
-                        class="input"
-                        data-tooltip="<?=Liw::$lang['message']['hide_pass']?>"/>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="reg" class="button" value="<?=Liw::$lang['button']['registration']?>" /></td>
-            </tr>
-        </table>
-    </form>
+<div class = "container">
+    <div class="reg">
+        <h2><?=Liw::$lang['button']['registration']?>:</h2>
 
-    <div class="error_reg">
-        <?=$error;?>
+        <form action="/registration" method="post">
+            <div class="form-group">
+                <input
+                    type="text"
+                    id="login"
+                    name = "login"
+                    placeholder="<?=Liw::$lang['label']['login'];?>"
+                    data-tooltip="<?=Liw::$lang['message']['hide_login']?>"
+                    value="<?=$login?>"
+                    class="form-control input-center"
+                    autofocus
+                    >
+            </div>
+            <div class="form-group">
+                <input
+                    type="password"
+                    id="pass"
+                    name = "pass"
+                    placeholder="<?=Liw::$lang['label']['pass'];?>"
+                    class="form-control input-center"
+                    data-tooltip="<?=Liw::$lang['message']['hide_pass']?>"
+                    >
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Запомнить меня
+                </label>
+            </div>
+            <input type="submit" value="Регистрация" class="btn btn-success">
+        </form>
+
+        <div class="error_reg">
+            <?=$error;?>
+        </div>
     </div>
 
 </div>

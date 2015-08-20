@@ -3,10 +3,9 @@ use liw\core\Liw;
 /**
  * @var $login string
  */
-$this->title = 'MIRA - информация о пользователе';
 ?>
 
-<div class="user_info">
+<div class="container">
     <h1>Time: <?=date("d.m.Y H:i:s", time());?></h1>
     <p class="test">
         <?=Liw::$lang['label']['login'];?>: <?=isset($_SESSION['user']['login'])?$_SESSION['user']['login']:'';?>

@@ -10,11 +10,20 @@ class MainController extends Controller
         $this->render('index');
     }
 
+    public function moreAction()
+    {
+        $this->render('more');
+    }
+
+    public function installAction()
+    {
+        $this->render('install');
+    }
+
     public function testAction()
     {
         $this->render('error', [
             'error' => 'Это test variable'
         ]);
-
     }
 }

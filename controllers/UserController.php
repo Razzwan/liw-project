@@ -3,7 +3,6 @@ namespace web\controllers;
 
 use liw\core\Controller;
 use liw\core\Liw;
-use liw\core\View;
 use web\models\LoginForm;
 use web\models\User;
 
@@ -40,13 +39,13 @@ class UserController extends Controller
             if($user->verify($loginForm->fields)){
                 $this->redirect('/user');
             } else {
-                $this->redirect(['main', 'error'],[
+                $this->redirect(['user', 'registration'],[
                     'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
                     'error' => Liw::$lang['error']['verify']
                 ]);
             }
         } else {
-            $this->redirect(['main', 'error'], [
+            $this->redirect(['user', 'registration'], [
                 'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
                 'error' => Liw::$lang['error']['verify']
             ]);
