@@ -16,7 +16,7 @@ return $config = [
     'def_layout'=> 'layout', //Вид по умолчанию
     'def_lang'  => 'ru',     //Язык
     'domain'    => '',       //полный адрес домена
-    
+
     // Подключение к базе данных
     'db' => [
         'host' => 'localhost',

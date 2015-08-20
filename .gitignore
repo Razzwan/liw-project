@@ -3,6 +3,7 @@
 composer.lock
 /config/host
 /config
+!/config/config.php
 /vendor
 liw.bat
 plan-tz.md
