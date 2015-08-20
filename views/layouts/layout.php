@@ -7,67 +7,87 @@ use liw\core\Liw;
  */
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <link rel="SHORTCUT ICON" href="/img/ico/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/jquery-ui.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/jquery-ui.structure.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/site.css" />
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="/css/dev.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="The Liw Framework. Very lite but very strong.">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
     <title><?=$this->title?></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- my styles-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/site.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/dev.css" />
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
-<div id="top-menu">
-    <h1><?=$this->title?></h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><span class="logo"><?=$this->title?> - life is wonderful</span></a>
 
-    <div class="btn-group" role="group" aria-label="...">
-        <a href = "/" class="btn btn-default ">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            main
-        </a>
-        <a href="/test" class="btn btn-default">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            test
-        </a>
-        <a href="/reg" class="btn btn-default">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            регистрация
-        </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Войти</button>
+            </form>
+        </div><!--/.navbar-collapse -->
     </div>
-</div>
+</nav>
 
-
-
+<!-- Main jumbotron for a primary marketing message or call to action -->
 <div id="main_wrapper">
 
-    <div id="main">
-        <?=$this->view;?>
-    </div>
-
-    <footer>
-        <div class="logo_boot">&copy; LIW 2015</div>
-    </footer>
+    <?=$this->view;?>
 
 </div>
 
-<div class="js-block">
-    <script src="/js/jquery.js" type="text/javascript" ></script>
-    <script src="/js/jquery-ui.min.js" type="text/javascript" ></script>
-    <script src="/js/bootstrap.min.js" type="text/javascript" ></script>
-    <script src="/js/dev.js" type="text/javascript" ></script>
-</div>
+<footer>
+    <p>&copy; Razzwan <span class="logo">LIW</span> 2015</p>
+</footer>
 
-<div id="tooltip"></div>
 
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.js" type="text/javascript" ></script>
+<script src="/js/jquery-ui.min.js" type="text/javascript" ></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/js/dev.js" type="text/javascript" ></script>
 </body>
 </html>

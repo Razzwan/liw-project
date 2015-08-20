@@ -1,24 +1,37 @@
 #develop{
     background-color: #ffffff;
+    border: 1px solid #3c3c3c;
+    border-radius:2px;
+      -webkit-border-radius:2px;
+      -moz-border-radius:2px;
+      -khtml-border-radius:2px;
     cursor: pointer;
     display: none;
     left: 50%;
     margin-left: -375px;
     position: absolute;
-    top: 0;
+    top: 50px;
     z-index: 9999;
 }
 #develop_button{
     background-color: #ff0000;
+    border: 1px solid #3c3c3c;
+    border-radius:2px;
+      -webkit-border-radius:2px;
+      -moz-border-radius:2px;
+      -khtml-border-radius:2px;
     cursor: pointer;
+    margin-top: -28px;
+    padding: 2px;
     position: absolute;
-    top: 0;
+    top: 100%;
     z-index: 9999;
 }
 #develop table td{
     border: 1px solid #000000;
     border-collapse: separate;
     height: 30px;
+    padding: 2px 0 0;
     text-align: center;
     width: 144px;
 }
@@ -26,35 +39,35 @@
     display: none;
     left: 152px;
     position: absolute;
-    top: 76px;
+    top: 74px;
     z-index: 10000;
 }
 #show_session{
     display: none;
     left: 602px;
     position: absolute;
-    top: 76px;
+    top: 74px;
     z-index: 10000;
 }
 #show_get{
     display: none;
     left: 452px;
     position: absolute;
-    top: 76px;
+    top: 74px;
     z-index: 10000;
 }
 #show_post{
     display: none;
     left: 452px;
     position: absolute;
-    top: 76px;
+    top: 74px;
     z-index: 10000;
 }
 #show_requests{
     display: none;
     left: 152px;
     position: absolute;
-    top: 76px;
+    top: 74px;
     z-index: 10000;
 }
 .dp_label{
