@@ -3,7 +3,11 @@ $(document).ready(function($){
     /**
      * Панель разработчика
      */
-    $("#develop").draggable();
+    $(".button-show").mousemove(function (eventObject) {
+        $("#show_classes") .show();
+    }).mouseout(function () {
+        $("#show_classes").hide();
+    });
 
     $("#button_show_classes").mousemove(function (eventObject) {
         $("#show_classes") .show();
