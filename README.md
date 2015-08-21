@@ -1,24 +1,25 @@
-# Прочти меня #
+# Прочти меня
 
 Мини фрэймворк для обучения. Присоединяйся! ;)
 
-## Установка: ##
+## Установка: 
 
-### 1. при помощи composer (предпочтительно): ###
+### 1. при помощи composer (предпочтительно):
 1. Установите [composer](https://getcomposer.org/doc/00-intro.md)
 
 2. Перейдите при помощи терминала(linux/osx) или GitBash(windows) в папку доступную из веб (www, public...):
-***cd /path/to/public/folder***
+*** cd /path/to/public/folder
 
 3. Выполните в терминале(linux/osx) или GitBash(windows) команду:
-***php composer.phar create-project liw/liw-project newProject ***
+*** php composer.phar create-project liw/liw-project newProject
+
 или, если composer добавлен в PATH:
-***composer create-project liw/liw-project newProject***
+*** composer create-project liw/liw-project newProject 
 
 Composer установит проект в папку newProject.
 Можно работать.
 
-### 2. из архивов: ###
+### 2. из архивов:
 1. Скачайте архив.
 
 2. Распакуйте в рабочую директорию.
