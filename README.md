@@ -13,7 +13,7 @@ cd /path/to/public/folder
 ```
 
 3. Выполните в терминале(linux/osx) или GitBash(windows) команду:
-4. 
+
  ```composer
 php composer.phar create-project liw/liw-project newProject 
 ```
