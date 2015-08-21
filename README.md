@@ -5,7 +5,7 @@
 ## Установка: ##
 
 ### 1. при помощи composer (предпочтительно): ###
-1. Установите composer: https://getcomposer.org/doc/00-intro.md
+1. Установите [composer](https://getcomposer.org/doc/00-intro.md)
 
 2. Перейдите при помощи терминала(linux/osx) или GitBash(windows) в папку доступную из веб (www, public...):
 ##### cd /path/to/public/folder #####
