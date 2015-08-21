@@ -1,7 +1,6 @@
 .idea
 .gitignore
 composer.lock
-/config/host/*
 /config/*
 /vendor
 liw.bat
