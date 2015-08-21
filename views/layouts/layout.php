@@ -55,7 +55,7 @@ use liw\core\Liw;
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <?php if (Liw::$user['login']): ?>
+            <?php if (!Liw::$isGuest): ?>
                 <div class="navbar-form navbar-right">
                     <div class="form-group">
                         <a href="/user" class="logo"><?=$_SESSION['user']['login'];?></a>
@@ -65,7 +65,7 @@ use liw\core\Liw;
                     </div>
 
                 </div>
-            <?php elseif(!Liw::$user['login']): ?>
+            <?php elseif(Liw::$isGuest): ?>
                 <form action="/login" method="post" class="navbar-form navbar-right">
                     <div class="form-group">
                         <input name="login" id="login" type="text" placeholder="<?=Liw::$lang['label']['login'];?>" class="form-control">

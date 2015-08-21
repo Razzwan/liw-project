@@ -15,13 +15,12 @@ return $config = [
     'def_route' => 'main',   //Контроллер по умолчанию (в нижнем регистре)
     'def_layout'=> 'layout', //Вид по умолчанию
     'def_lang'  => 'ru',     //Язык
-    'domain'    => '',       //полный адрес домена
 
     // Подключение к базе данных
     'db' => [
         'host' => 'localhost',
         'user' => 'root',
-        'pass' => '',
-        'name' => '',
+        'pass' => '987654321',
+        'name' => 'mira',
     ],
 ];

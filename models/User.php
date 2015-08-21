@@ -11,7 +11,7 @@ use liw\core\Liw;
 class User extends Model
 {
     /**
-     * @var string название таблицы в БД, с которой работаем
+     * @var string пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅ, пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
      */
     protected $table = 'user';
 
@@ -38,15 +38,15 @@ class User extends Model
     }
 
     /**
-     * Обеспечивает узнавание пользователя
+     * Р—Р°РїСѓСЃРє СЃРµСЃСЃРёРё
      */
     private function session_start(){
-        Liw::$user['login'] = true;
+        Liw::$isGuest = false;
         $_SESSION['user'] = $this->fields;
     }
 
     static public function session_stop(){
-        Liw::$user['login'] = false;
+        Liw::$isGuest = true;
         unset($_SESSION['user']);
     }
 

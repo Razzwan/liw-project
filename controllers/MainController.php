@@ -22,8 +22,6 @@ class MainController extends Controller
 
     public function testAction()
     {
-        $this->render('error', [
-            'error' => 'Это test variable'
-        ]);
+        $this->redirect('/install');
     }
 }

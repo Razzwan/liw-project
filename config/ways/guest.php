@@ -6,7 +6,6 @@ return $ways = [
     '/registration' => ['controller' => 'user', 'action' => 'registration'],
     '/login'        => ['controller' => 'user', 'action' => 'login'],
     '/test'         => ['controller' => 'main', 'action' => 'test'],
-    '/ajax'         => ['controller' => 'ajax', 'action' => 'change_title'],
     '/more'         => ['controller' => 'main', 'action' => 'more'],
     '/install'      => ['controller' => 'main', 'action' => 'install'],
 ];
