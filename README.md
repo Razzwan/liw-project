@@ -23,7 +23,7 @@ Composer установит проект в папку newProject.
 
 2. Распакуйте в рабочую директорию.
 
-3. Затем скачайте архивы https://github.com/Razzwan/core и https://github.com/Razzwan/liw-installer
+3. Затем скачайте архивы [core](https://github.com/Razzwan/core) и [liw-installer](https://github.com/Razzwan/liw-installer)
 
 4. И распакуйте их в папку vendor/liw вашего проетка.
  
