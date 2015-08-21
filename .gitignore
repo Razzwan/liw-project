@@ -1,11 +1,6 @@
 .idea
-.gitignore
 composer.lock
 /config/*
-!/config/config.php
-!/config/languages/ru.php
-!/config/ways/guest.php
-!/config/ways/login.php
 /vendor
 liw.bat
 plan-tz.md
