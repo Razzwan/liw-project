@@ -8,12 +8,18 @@
 1. Установите [composer](https://getcomposer.org/doc/00-intro.md)
 
 2. Перейдите при помощи терминала(linux/osx) или GitBash(windows) в папку доступную из веб (www, public...):
-##### cd /path/to/public/folder #####
+```composer
+cd /path/to/public/folder
+```
 
 3. Выполните в терминале(linux/osx) или GitBash(windows) команду:
-##### php composer.phar create-project liw/liw-project newProject #####
+ ```composer
+php composer.phar create-project liw/liw-project newProject 
+```
 или, если composer добавлен в PATH:
-##### composer create-project liw/liw-project newProject #####
+```composer
+composer create-project liw/liw-project newProject
+```
 
 Composer установит проект в папку newProject.
 Можно работать.
