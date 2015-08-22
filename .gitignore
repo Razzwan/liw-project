@@ -4,3 +4,9 @@ composer.lock
 /vendor/*
 liw.bat
 plan-tz.md
+bower.json
+Gruntfile.js
+npm-debug.log
+package.json
+/node_modules
+/bower_components
