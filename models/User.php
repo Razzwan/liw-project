@@ -11,7 +11,7 @@ use liw\core\Liw;
 class User extends Model
 {
     /**
-     * @var string �������� ������� � ��, � ������� ��������
+     * @var string это название таблицы, для которой создается модель
      */
     protected $table = 'user';
 
