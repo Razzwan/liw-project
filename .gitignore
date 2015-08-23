@@ -2,6 +2,7 @@
 composer.lock
 /config
 /vendor
+liw
 liw.bat
 plan-tz.md
 bower.json
