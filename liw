@@ -1,7 +1,8 @@
 <?php
 
-require __DIR__ . '/core/boot.php'; //Файл загрузчик модулей приложения
+define("LIW_WEB", __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR);
+require __DIR__ . '/vendor/liw/core/Liw.php';
 
-\liw\creator\App::run();
+\liw\console\App::run();
 
 
