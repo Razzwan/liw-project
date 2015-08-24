@@ -24,4 +24,5 @@ class MainController extends Controller
     {
         $this->redirect('/install');
     }
+
 }
