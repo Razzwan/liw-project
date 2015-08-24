@@ -5,9 +5,13 @@
  */
 define('DEVELOP', true);
 
-define("LIW_WEB", dirname(__DIR__) . DIRECTORY_SEPARATOR ); //определяем папку проекта
+/**
+ * определяет путь к папке, где лежит проект, а именно папки:
+ * 1. config; 2. controllers; 3. models; 4. views
+ */
+define("LIW_WEB", dirname(__DIR__) . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR);
 
-require LIW_WEB . 'vendor/autoload.php'; //Файл загрузчик модулей приложения
+require __DIR__ . '/../vendor/autoload.php'; //Файл загрузчик модулей приложения
 
 /**
  * Запуск приложения
