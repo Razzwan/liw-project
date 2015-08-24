@@ -1,6 +1,8 @@
 .idea
 composer.lock
-/config
+/config/host
+/config/config.php
+/config/ways/article
 /vendor
 liw
 liw.bat
@@ -11,3 +13,6 @@ npm-debug.log
 package.json
 /node_modules
 /bower_components
+/tests
+/web/js/captcha.js
+/web/js/captcha

@@ -9,8 +9,9 @@
     display: none;
     left: 50%;
     margin-left: -375px;
-    position: absolute;
-    top: 50px;
+    margin-top: -80px;
+    position: fixed;
+    top: 100%;
     z-index: 9999;
 }
 #develop_button{
@@ -23,7 +24,7 @@
     cursor: pointer;
     margin-top: -28px;
     padding: 2px;
-    position: absolute;
+    position: fixed;
     top: 100%;
     z-index: 9999;
 }

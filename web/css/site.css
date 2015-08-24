@@ -94,9 +94,47 @@ footer{
     color: #105010;
     margin: 80px 10% 10px 10%;
     min-height: 150px;
+    min-width: 342px;
     opacity: 0.9;
     padding: 20px;
     text-align: center;
+}
+.reg canvas{
+    border: solid 1px #204020;
+    border-radius:3px;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        -khtml-border-radius:3px;
+    box-shadow: 0 0 10px #107010;
+        -moz-box-shadow: 0 0 10px #107010;
+        -webkit-box-shadow: 0 0 10px #107010;
+    cursor: pointer;
+    height: 140px;
+    user-select: none;
+        -moz-user-select: -moz-none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+    width: 210px;
+
+}
+.reg canvas:hover{
+    box-shadow: 0 0 30px #107010;
+        -moz-box-shadow: 0 0 30px #107010;
+        -webkit-box-shadow: 0 0 30px #107010;
+}
+.reg canvas:active{
+    border: solid 1px #ffff00;
+    box-shadow: 0 0 30px #ffff00;
+        -moz-box-shadow: 0 0 30px #ffff00;
+        -webkit-box-shadow: 0 0 30px #ffff00;
+}
+.reg p{
+    user-select: none;
+        -moz-user-select: -moz-none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
 }
 .input-center{
     text-align: center;

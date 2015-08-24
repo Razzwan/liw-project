@@ -15,9 +15,12 @@
         }
     ],
     "require": {
-        "liw/core": ">=1.0.1",
-        "liw/liw-installer":">=1.0",
+        "liw/core": "~1.1",
+        "liw/liw-installer":"~1.0",
         "components/bootstrap-default":"3.3.*"
+    },
+    "require-dev":{
+        "phpunit/phpunit": "~4.5"
     },
     "repositories":[
         {

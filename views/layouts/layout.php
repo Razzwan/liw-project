@@ -86,6 +86,7 @@ use liw\core\Liw;
     <p>&copy; Razzwan <span class="logo">LIW</span> 2015</p>
 </footer>
 
+
 <div id="tooltip"></div>
 
 
@@ -97,5 +98,8 @@ use liw\core\Liw;
 <script src="/js/jquery-ui.min.js" type="text/javascript" ></script>
 <script src="/js/dev.js" type="text/javascript" ></script>
 <script src="/js/js.js" type="text/javascript" ></script>
+<script src="/js/captcha.js" type="text/javascript" ></script>
+
+<div id="develop_button">Time:<?=' ' . sprintf("%d", (microtime(true)-$_SERVER["REQUEST_TIME_FLOAT"])*1000) . 'ms';?></div>
 </body>
 </html>
