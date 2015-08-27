@@ -15,9 +15,8 @@
         }
     ],
     "require": {
-        "liw/core": "~1.0",
+        "liw/core": "~1.1",
         "liw/liw-installer":"~1.0",
-        "components/bootstrap-default":"3.3.*",
         "gregwar/captcha": "1.*"
     },
     "require-dev":{
