@@ -3,6 +3,7 @@ namespace web\models;
 
 use liw\core\Model;
 use liw\core\Liw;
+use liw\core\web\Session;
 
 /**
  * Class ModelBD
@@ -38,16 +39,16 @@ class User extends Model
     }
 
     /**
-     * Запуск сессии
+     * Добавляем информацию о пользователе в сессию
      */
-    private function session_start(){
+    private function addUserInSession(){
         Liw::$isGuest = false;
-        $_SESSION['user'] = $this->fields;
+        Session::set(['user' => $this->fields]);
     }
 
-    static public function session_stop(){
+    static public function deleteUserFromSession(){
         Liw::$isGuest = true;
-        unset($_SESSION['user']);
+        Session::delete('user');
     }
 
     public function saveUser($fields){
@@ -56,11 +57,11 @@ class User extends Model
         $this->fields['levels']= '011';
         $this->fields['last_visit'] = $this->fields['date_create'] = time();
         if($this->save()){
-            $this->session_start();
+            self::addUserInSession();
             return true;
         } else {
             $this->error = Liw::$lang['error']['user_exist'];
-            $this->session_stop();
+            self::deleteUserFromSession();
             return false;
         }
     }
@@ -81,7 +82,7 @@ class User extends Model
                 ->update(['last_visit'])
                 ->where(['id'=>$this->fields['id']])
                 ->push();
-            $this->session_start();
+            self::addUserInSession();
             return $this;
         }
         $this->error = Liw::$lang['error']['verify'];

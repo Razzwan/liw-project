@@ -3,8 +3,10 @@ namespace web\controllers;
 
 use liw\core\Controller;
 use liw\core\Liw;
+use liw\core\web\Session;
 use web\models\LoginForm;
 use web\models\User;
+use Gregwar\Captcha\CaptchaBuilder;
 
 class UserController extends Controller
 {
@@ -24,8 +26,9 @@ class UserController extends Controller
 
         } else {
             $model = [
-                'error' => $loginForm->error?:$user->error,
-                'login' => isset($loginForm->fields['login'])?$loginForm->fields['login']: null
+                'error'   => $loginForm->error?:$user->error,
+                'login'   => isset($loginForm->fields['login'])?$loginForm->fields['login']: null,
+                'captcha' => $this->newCaptcha()
             ];
             $this->render('registration', $model);
         }
@@ -41,19 +44,30 @@ class UserController extends Controller
             } else {
                 $this->redirect(['user', 'registration'],[
                     'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
-                    'error' => Liw::$lang['error']['verify']
+                    'error' => Liw::$lang['error']['verify'],
+                    'captcha' => $this->newCaptcha()
                 ]);
             }
         } else {
             $this->redirect(['user', 'registration'], [
                 'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
-                'error' => Liw::$lang['error']['verify']
+                'error' => Liw::$lang['error']['verify'],
+                'captcha' => $this->newCaptcha()
             ]);
         }
     }
 
     public function logoutAction(){
-        User::session_stop();
+        User::deleteUserFromSession();
         $this->redirect('/');
     }
+
+    private function newCaptcha()
+    {
+        $builder = new CaptchaBuilder;
+        $builder->build();
+        Session::set(['phrase' => $builder->getPhrase()]);
+        return $builder->inline();
+    }
+
 }

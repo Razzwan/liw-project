@@ -39,35 +39,35 @@
 #show_classes{
     display: none;
     left: 152px;
-    position: absolute;
+    position: fixed;
     top: 74px;
     z-index: 10000;
 }
 #show_session{
     display: none;
     left: 602px;
-    position: absolute;
+    position: fixed;
     top: 74px;
     z-index: 10000;
 }
 #show_get{
     display: none;
     left: 452px;
-    position: absolute;
+    position: fixed;
     top: 74px;
     z-index: 10000;
 }
 #show_post{
     display: none;
     left: 452px;
-    position: absolute;
+    position: fixed;
     top: 74px;
     z-index: 10000;
 }
 #show_requests{
     display: none;
     left: 152px;
-    position: absolute;
+    position: fixed;
     top: 74px;
     z-index: 10000;
 }

@@ -162,3 +162,16 @@ footer{
     -khtml-border-radius:3px;
     z-index: 9999;
 }
+.captcha{
+    display: inline-block;
+}
+.captcha-img{
+    float: left;
+    height: 34px;
+    width: 30%;
+}
+.captcha-text{
+    margin-left: 5%;
+    max-width: 65%;
+
+}

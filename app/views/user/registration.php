@@ -1,10 +1,10 @@
 <?php
 use liw\core\Liw;
-use liw\captcha\Captcha;
 /**
  * Во всех видах доступны переменные класса View через конструкцию $this->variable
  * @var $login string
  * @var $error string - ошибка регистрации
+ * @var $captcha string captcha img
  */
 ?>
 
@@ -45,10 +45,16 @@ use liw\captcha\Captcha;
             </div>
 
             <div class="form-group">
-                <label>Введите цветовой шифр: </label>
-                <p><?=Captcha::init();?></p>
-                <canvas id='canvas'>Обновите браузер</canvas>
-                <input type="hidden" value="" id="captcha">
+                <div class="input-center">
+                    <img src="<?= $captcha;?>" class="captcha captcha-img"/>
+                    <input
+                        type="text"
+                        id="captcha"
+                        name = "captcha"
+                        class="form-control captcha captcha-text"
+                        data-tooltip="Введите текст с картинки"
+                        >
+                </div>
             </div>
 
             <div class="form-group">
