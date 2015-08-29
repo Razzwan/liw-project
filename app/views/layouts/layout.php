@@ -20,6 +20,10 @@ use liw\core\Liw;
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- fonts: Open Sans, Merienda One формат woff-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+
     <!-- my styles-->
     <link rel="stylesheet" type="text/css" media="screen" href="/css/dev.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/site.css" />

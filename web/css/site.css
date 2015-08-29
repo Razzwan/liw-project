@@ -5,17 +5,10 @@
 * 2. -moz, -webkit свойства идут после основного и
 * выделенны 2мя пробелами
 */
-@font-face {
-    font-family: Andika;
-    src: url(../fonts/Andika-R.ttf);
-}
-@font-face {
-    font-family: MeriendeOne-Regular;
-    src: url(../fonts/MeriendaOne-Regular.ttf);
-}
 html,
 body {
-    font: 14px Andika;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -25,6 +18,7 @@ body {
 */
 #main_wrapper {
     min-height: 100%;
+    min-width: 480px;
     padding-top: 50px;
     overflow-y: auto;
 }
@@ -58,14 +52,14 @@ footer{
 }
 .logo{
     color: #ac2925;
-    font-family: MeriendeOne-Regular;
+    font-family: 'Merienda One', cursive;
     font-weight: bold;
 }
 .error {
     text-align: center;
-    margin: 100px auto 10px auto;
+    margin: 50px auto 10px auto;
     padding-top: 20px;
-    width: 600px;
+    max-width: 600px;
     min-height: 150px;
     border: solid 2px #ff0000;
     background-color: #ffdddd;
