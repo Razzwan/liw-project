@@ -40,6 +40,7 @@ return $lang = [
         'number' => ' must be a number',
         'min' => ' не должно иметь меньше символов чем',
         'max' => ' не должно иметь больше символов чем',
+        'regV'       => ': не соответствует паттерну ',
         'user_exist' => 'This user name exists!',
         'login' => ': использованы запрещенные символы.<br> Только латинские буквы, цифры, "-" и "_".',
         'verify'=> 'Authorisation Error!',
