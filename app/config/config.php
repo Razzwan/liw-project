@@ -20,7 +20,7 @@ return $config = [
     'db' => [
         'host' => 'localhost',
         'user' => 'root',
-        'pass' => '',
-        'name' => '',
+        'pass' => '987654321',
+        'name' => 'mira',
     ],
 ];
