@@ -1,8 +1,5 @@
 .idea
 composer.lock
-/liw-project/config/host
-/liw-project/config/config.php
-/liw-project/config/ways/article
 /vendor
 liw
 liw.bat
