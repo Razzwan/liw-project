@@ -16,3 +16,4 @@ package.json
 /tests
 /web/js/captcha.js
 /web/js/captcha
+phpunit.xml

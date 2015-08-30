@@ -104,6 +104,6 @@ use liw\core\Liw;
 <script src="/js/js.js" type="text/javascript" ></script>
 <script src="/js/captcha.js" type="text/javascript" ></script>
 
-<div id="develop_button">Time:<?=' ' . sprintf("%d", (microtime(true)-$_SERVER["REQUEST_TIME_FLOAT"])*1000) . 'ms';?></div>
+<div id="develop_button">Time:<?=' ' . sprintf("%G",(sprintf("%d", (microtime(true)-$_SERVER["REQUEST_TIME_FLOAT"])*100000))/100) . 'ms';?></div>
 </body>
 </html>
