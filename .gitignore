@@ -1,6 +1,7 @@
 .idea
 composer.lock
 /vendor
+/app/config/config.php
 liw
 liw.bat
 plan-tz.md
