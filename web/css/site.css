@@ -5,9 +5,17 @@
 * 2. -moz, -webkit свойства идут после основного и
 * выделенны 2мя пробелами
 */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans.ttf);
+}
+@font-face {
+    font-family: 'Merienda One';
+    src: url(../fonts/MeriendaOne-Regular.ttf);
+}
 html,
 body {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     height: 100%;
     margin: 0;
@@ -60,16 +68,15 @@ footer{
     margin: 50px auto 10px auto;
     padding-top: 20px;
     max-width: 600px;
-    min-height: 150px;
     border: solid 2px #ff0000;
     background-color: #ffdddd;
     border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -khtml-border-radius:3px;
-    -moz-box-shadow: 0 0 14px #f00;
-    -webkit-box-shadow: 0 0 14px #f00;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        -khtml-border-radius:3px;
     box-shadow: 0 0 14px #f00;
+        -moz-box-shadow: 0 0 14px #f00;
+        -webkit-box-shadow: 0 0 14px #f00;
 }
 .indent50{
     padding-left: 50px;

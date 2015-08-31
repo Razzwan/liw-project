@@ -2,6 +2,7 @@
 namespace web\controllers;
 
 use liw\core\Controller;
+use liw\core\web\Request;
 
 class MainController extends Controller
 {
