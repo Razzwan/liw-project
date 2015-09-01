@@ -1,6 +1,5 @@
 
-<phpunit bootstrap="vendor/autoload.php"
-         beStrictAboutTestsThatDoNotTestAnything="true">
+<phpunit bootstrap="vendor/autoload.php">
     <testsuites>
         <testsuite name="All">
             <directory>tests</directory>
