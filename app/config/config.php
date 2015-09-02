@@ -12,7 +12,7 @@
 return $config = [
 
     'site_name' => 'LIW',    //Название сайта
-    'def_route' => 'main',   //Контроллер по умолчанию (в нижнем регистре)
+    'def_route' => 'main',   //Контроллер по умолчанию
     'def_layout'=> 'layout', //Вид по умолчанию
     'def_lang'  => 'ru',     //Язык
 
