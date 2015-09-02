@@ -55,6 +55,12 @@ footer{
     position: absolute;
     top: 0;
 }
+/**
+* Чтоб работали ссылки выпадающего меню на тач экранах
+*/
+.dropdown-backdrop {
+    position: static;
+}
 .jumbotron{
     text-align: center;
 }

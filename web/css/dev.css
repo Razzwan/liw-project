@@ -5,13 +5,15 @@
       -webkit-border-radius:2px;
       -moz-border-radius:2px;
       -khtml-border-radius:2px;
-    color: #000000;
+    color: #080808;
     cursor: pointer;
     display: none;
     left: 50%;
     margin-left: -375px;
     margin-top: -80px;
     position: fixed;
+    text-align: left;
+    text-shadow:none;
     top: 100%;
     z-index: 9999;
 }

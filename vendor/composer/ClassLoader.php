@@ -410,13 +410,5 @@ class ClassLoader
  */
 function includeFile($file)
 {
-    /**
-     * insert Razzwan for develop
-     */
-    if(defined("DEVELOP") && DEVELOP === true){
-        require_once '/home/www/liw.loc/vendor/liw/core/develop/Dev.php';
-        Dev::$dev['classes'][] = $file;
-    }
-
     include $file;
 }
