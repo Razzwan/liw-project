@@ -1,13 +1,13 @@
 <?php
 return $ways = [
-    ''              => ['MainController', 'indexAction'],
-    '/'             => ['MainController', 'indexAction'],
-    '/error'        => ['MainController', 'errorAction'],
-    '/more'         => ['MainController', 'moreAction'],
-    '/install'      => ['MainController', 'installAction'],
+    ''              => ['Main:index'],
+    '/'             => ['Main:index'],
+    '/error'        => ['Main:error'],
+    '/more'         => ['Main:more'],
+    '/install'      => ['Main:install'],
 
-    '/registration' => ['UserController', 'registrationAction'],
-    '/login'        => ['UserController', 'loginAction'],
+    '/registration' => ['User:registration'],
+    '/login'        => ['User:login'],
 
-    '/articles'     => ['ArticleController', 'show_allAction'],
+    '/articles'     => ['Article:show_all'],
 ];
