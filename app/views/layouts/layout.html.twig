@@ -1,11 +1,3 @@
-<?php
-use liw\core\Liw;
-
-/**
- * @var $this object liw\core\base\View
- * @var $login string
- */
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,7 +7,7 @@ use liw\core\Liw;
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="The Liw Framework. Very lite but very strong.">
     <meta name="author" content="Razzwan">
-    <title><?=$this->title?></title>
+    <title>Название страницы</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -82,7 +74,7 @@ use liw\core\Liw;
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div id="main_wrapper">
 
-    <?=$this->view;?>
+    {% block content %}{% endblock %}
 
 </div>
 
@@ -104,6 +96,6 @@ use liw\core\Liw;
 <script src="/js/js.js" type="text/javascript" ></script>
 <script src="/js/captcha.js" type="text/javascript" ></script>
 
-<div id="develop_button">Time:<?=' ' . sprintf("%G",(sprintf("%d", (microtime(true)-$_SERVER["REQUEST_TIME_FLOAT"])*100000))/100) . 'ms';?></div>
+<div id="develop_button">Time:Добавить переменную времени</div>
 </body>
 </html>

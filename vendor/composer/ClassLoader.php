@@ -11,7 +11,6 @@
  */
 
 namespace Composer\Autoload;
-use liw\core\develop\Dev;
 
 /**
  * ClassLoader implements a PSR-0 class loader

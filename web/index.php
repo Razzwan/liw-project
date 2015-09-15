@@ -19,5 +19,3 @@ require_once __DIR__ . '/../vendor/autoload.php'; //Файл загрузчик 
  */
 liw\core\App::start();
 
-
-

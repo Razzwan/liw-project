@@ -6,9 +6,11 @@ use liw\core\web\Request;
 
 class MainController extends Controller
 {
+    public $layout = 'layout';
+
     public function indexAction()
     {
-        $this->render('index');
+        $this->twig('twig');
     }
 
     public function moreAction()
