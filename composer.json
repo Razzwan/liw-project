@@ -15,6 +15,8 @@
         }
     ],
     "require": {
+        "liw/core": "~1.1",
+        "liw/liw-installer":"~1.0",
         "gregwar/captcha": "1.*",
         "twig/twig" : "~1.22"
     },
