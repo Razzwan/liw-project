@@ -7,5 +7,5 @@ return $ways = [
     '/install'      => ['Main:install'],
 
     '/logout'       => ['User:logout'],
-    '/user'         => ['User:index'],
+    '/user'         => ['User:index'], '/user/=id'
 ];
