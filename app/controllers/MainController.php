@@ -10,7 +10,7 @@ class MainController extends Controller
 
     public function indexAction()
     {
-        $this->twig('twig');
+        $this->render('index');
     }
 
     public function moreAction()

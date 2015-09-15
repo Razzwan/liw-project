@@ -15,5 +15,5 @@ RewriteCond %{REQUEST_FILENAME} !^favicon\.ico
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# Это все из за этой строки
+# Перенаправление всех маршрутов на обработку файлом ниже
 RewriteRule ^(.*)$ index.php [L,QSA]
