@@ -19,4 +19,6 @@ phpunit.xml
 /app/controllers/AjaxController.php
 /app/controllers/ArticleController.php
 /web/assets
+/web/index.test.php
 /l
+
