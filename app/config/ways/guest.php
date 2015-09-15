@@ -5,6 +5,7 @@ return $ways = [
     '/error'        => ['Main:error'],
     '/more'         => ['Main:more'],
     '/install'      => ['Main:install'],
+    '/test'         => ['Main:test'],
 
     '/registration' => ['User:registration'],
     '/login'        => ['User:login'],

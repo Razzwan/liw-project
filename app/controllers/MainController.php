@@ -25,7 +25,7 @@ class MainController extends Controller
 
     public function testAction()
     {
-        $this->redirect('/install');
+        $this->twig('twig');
     }
 
 }
