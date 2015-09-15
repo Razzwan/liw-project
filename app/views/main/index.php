@@ -1,12 +1,11 @@
 <?php
 use liw\core\Liw;
-
 /**
  * $this - liw\core\base\View
  * @var $test
  */
 ?>
-
+{% extends '@layouts/layout.php' %}
 <div class="jumbotron">
     <h1>The <span class="logo">L</span>ife <span class="logo">I</span>s <span class="logo">W</span>onderful</h1>
     <h2 class="text-success">Framework</h2>
