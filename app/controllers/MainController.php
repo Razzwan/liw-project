@@ -25,7 +25,7 @@ class MainController extends Controller
 
     public function testAction()
     {
-        $this->twig('twig');
+        $this->twig('index.twig');
     }
 
 }
