@@ -93,12 +93,12 @@ class User extends Model
         return false;
     }
 
-    public function findById($id, $fields){
-        $result =  $this
-            ->select($fields)
+    public function findById($id){
+        $user =  $this
+            ->select()
             ->where(['id'=>$id])
             ->get();
-        return $result;
+        return $user;
     }
 
 }

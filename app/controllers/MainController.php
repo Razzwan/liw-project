@@ -3,6 +3,7 @@ namespace web\controllers;
 
 use liw\core\Controller;
 use liw\core\web\Request;
+use web\models\User;
 
 class MainController extends Controller
 {
@@ -25,6 +26,8 @@ class MainController extends Controller
 
     public function testAction()
     {
+        $user = new User();
+        $user->findById(3);
         $this->twig('index.twig');
     }
 
