@@ -51,11 +51,15 @@ class User extends Model
         Session::delete('user');
     }
 
+    /**
+     * @param $fields
+     * @return bool
+     */
     public function saveUser($fields){
-        $this->fields['login'] = $fields['login'];
-        $this->fields['hash']  = $this->hash($fields['pass']);
-        $this->fields['levels']= '011';
-        $this->fields['last_visit'] = $this->fields['date_create'] = time();
+        $this->login      = $fields['login'];
+        $this->hash       = $this->setHash($fields['pass']);
+        $this->levels     = '011';
+        $this->last_visit = $this->date_create = time();
         if($this->save()){
             self::addUserInSession();
             return true;
@@ -66,8 +70,8 @@ class User extends Model
         }
     }
 
-    private function hash($password){
-        unset($this->fields['pass']);
+    private function setHash($password){
+        unset($this->pass);
         return password_hash($password, PASSWORD_DEFAULT);
     }
 
@@ -76,8 +80,8 @@ class User extends Model
             ->select()
             ->where(['login' => $fields['login']])
             ->get();
-        if(!empty($this->fields['login']) && password_verify($fields['pass'], $this->fields['hash'])){
-            $this->fields['last_visit'] = time();
+        if(!empty($this->login) && password_verify($fields['pass'], $this->hash)){
+            $this->last_visit = time();
             $this
                 ->update(['last_visit'])
                 ->where(['id'=>$this->fields['id']])
@@ -97,4 +101,4 @@ class User extends Model
         return $result;
     }
 
-} 
+}

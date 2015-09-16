@@ -27,7 +27,7 @@ class UserController extends Controller
         } else {
             $model = [
                 'error'   => $loginForm->error?:$user->error,
-                'login'   => isset($loginForm->fields['login'])?$loginForm->fields['login']: null,
+                'login'   => isset($loginForm->login)?$loginForm->login: null,
                 'captcha' => $this->newCaptcha()
             ];
             $this->render('registration', $model);
@@ -43,14 +43,14 @@ class UserController extends Controller
                 $this->redirect('/user');
             } else {
                 $this->redirect(['user', 'registration'],[
-                    'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
+                    'login' => isset($loginForm->login) ? $loginForm->login : null,
                     'error' => Liw::$lang['error']['verify'],
                     'captcha' => $this->newCaptcha()
                 ]);
             }
         } else {
             $this->redirect(['user', 'registration'], [
-                'login' => isset($loginForm->fields['login']) ? $loginForm->fields['login'] : null,
+                'login' => isset($loginForm->login) ? $loginForm->login : null,
                 'error' => Liw::$lang['error']['verify'],
                 'captcha' => $this->newCaptcha()
             ]);
