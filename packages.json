@@ -1,7 +1,7 @@
 {
     "name": "liw/liw-project",
     "description": "The Liw Framework Template",
-    "version":"1.1.14",
+    "version":"1.2.0",
     "keywords": ["framework", "liw", "project template"],
     "type": "project",
     "license": "MIT",
