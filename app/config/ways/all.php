@@ -5,7 +5,9 @@ return [
     '/error'        => ['Main::error'],
     '/more'         => ['Main::more'],
     '/install'      => ['Main::install'],
-    '/test'         => ['Main::test'],
+    '/test/{:d}'=> [
+        'Main::test'
+    ],
 
     '/registration' => ['User::registration'],
     '/login'        => ['User::login'],
