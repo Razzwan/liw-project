@@ -8,7 +8,7 @@ use liw\core\Liw;
 <div class="container">
     <h1>Time: <?=date("d.m.Y H:i:s", time());?></h1>
     <p class="test">
-        <?=Liw::$lang['label']['login'];?>: <?=isset($_SESSION['user']['login'])?$_SESSION['user']['login']:'';?>
+        <?=Lang::$uage[['label']['login'];?>: <?=isset($_SESSION['user']['login'])?$_SESSION['user']['login']:'';?>
     </p>
     <p class="test">
         Имя: <?=isset($_SESSION['user']['name'])?$_SESSION['user']['name']:'';?>

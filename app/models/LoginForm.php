@@ -2,7 +2,7 @@
 namespace web\models;
 
 use liw\core\model\BaseModel;
-use liw\core\Liw;
+use liw\core\Lang;
 
 class LoginForm extends BaseModel
 {
@@ -19,8 +19,8 @@ class LoginForm extends BaseModel
 
     public function labels(){
         return [
-            'login' => Liw::$lang['label']['login'],
-            'pass'  => Liw::$lang['label']['pass']
+            'login' => Lang::$uage['login'],
+            'pass'  => Lang::$uage['pass'],
         ];
     }
 

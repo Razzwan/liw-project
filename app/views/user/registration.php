@@ -1,5 +1,5 @@
 <?php
-use liw\core\Liw;
+use liw\core\Lang;
 /**
  * Во всех видах доступны переменные класса View через конструкцию $this->variable
  * @var $login string
@@ -10,7 +10,7 @@ use liw\core\Liw;
 
 <div class = "container">
     <div class="reg">
-        <h2><?=Liw::$lang['button']['registration']?>:</h2>
+        <h2><?=Lang::$uage['button_registration'];?>:</h2>
 
         <form action="/registration" method="post">
 
@@ -19,8 +19,8 @@ use liw\core\Liw;
                     type="text"
                     id="login"
                     name = "login"
-                    placeholder="<?=Liw::$lang['label']['login'];?>"
-                    data-tooltip="<?=Liw::$lang['message']['hide_login']?>"
+                    placeholder="<?=Lang::$uage['login'];?>"
+                    data-tooltip="<?=Lang::$uage['hide_login']?>"
                     value="<?=$login?>"
                     class="form-control input-center"
                     autofocus
@@ -32,9 +32,9 @@ use liw\core\Liw;
                     type="password"
                     id="pass"
                     name = "pass"
-                    placeholder="<?=Liw::$lang['label']['pass'];?>"
+                    placeholder="<?=Lang::$uage['pass'];?>"
                     class="form-control input-center"
-                    data-tooltip="<?=Liw::$lang['message']['hide_pass']?>"
+                    data-tooltip="<?=Lang::$uage['hide_pass'];?>"
                     >
             </div>
 

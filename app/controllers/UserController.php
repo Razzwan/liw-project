@@ -2,7 +2,7 @@
 namespace web\controllers;
 
 use liw\core\Controller;
-use liw\core\Liw;
+use liw\core\Lang;
 use liw\core\web\Session;
 use web\models\LoginForm;
 use web\models\User;
@@ -44,14 +44,14 @@ class UserController extends Controller
             } else {
                 $this->redirect(['user', 'registration'],[
                     'login' => isset($loginForm->login) ? $loginForm->login : null,
-                    'error' => Liw::$lang['error']['verify'],
+                    'error' => Lang::$uage['error_verify'],
                     'captcha' => $this->newCaptcha()
                 ]);
             }
         } else {
             $this->redirect(['user', 'registration'], [
                 'login' => isset($loginForm->login) ? $loginForm->login : null,
-                'error' => Liw::$lang['error']['verify'],
+                'error' => Lang::$uage['error_verify'],
                 'captcha' => $this->newCaptcha()
             ]);
         }
