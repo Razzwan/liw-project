@@ -64,10 +64,10 @@ use liw\core\Lang;
             <?php elseif(Liw::$isGuest): ?>
                 <form action="/login" method="post" class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input name="login" id="login" type="text" placeholder="<?=Lang::$uage['login'];?>" class="form-control">
+                        <input name="login" id="login" type="text" placeholder="<?=Lang::uage('login');?>" class="form-control">
                     </div>
                     <div class="form-group">
-                        <input name="pass" id="pass" type="password" placeholder="<?=Lang::$uage['pass'];?>" class="form-control">
+                        <input name="pass" id="pass" type="password" placeholder="<?=Lang::uage('pass');?>" class="form-control">
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Войти" class="btn btn-success">

@@ -10,7 +10,7 @@ use liw\core\Lang;
 
 <div class = "container">
     <div class="reg">
-        <h2><?=Lang::$uage['button_registration'];?>:</h2>
+        <h2><?=Lang::uage('button_registration');?>:</h2>
 
         <form action="/registration" method="post">
 
@@ -19,8 +19,8 @@ use liw\core\Lang;
                     type="text"
                     id="login"
                     name = "login"
-                    placeholder="<?=Lang::$uage['login'];?>"
-                    data-tooltip="<?=Lang::$uage['hide_login']?>"
+                    placeholder="<?=Lang::uage('login');?>"
+                    data-tooltip="<?=Lang::uage('hide_login')?>"
                     value="<?=$login?>"
                     class="form-control input-center"
                     autofocus
@@ -32,9 +32,9 @@ use liw\core\Lang;
                     type="password"
                     id="pass"
                     name = "pass"
-                    placeholder="<?=Lang::$uage['pass'];?>"
+                    placeholder="<?=Lang::uage('pass');?>"
                     class="form-control input-center"
-                    data-tooltip="<?=Lang::$uage['hide_pass'];?>"
+                    data-tooltip="<?=Lang::uage('hide_pass');?>"
                     >
             </div>
 

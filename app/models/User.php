@@ -31,8 +31,8 @@ class User extends Model
 
     public function labels(){
         return [
-            'login' => Lang::$uage['login'],
-            'hash'  => Lang::$uage['pass'],
+            'login' => Lang::uage('login'),
+            'hash'  => Lang::uage('pass'),
             'date_create' => 'date_create',
             'last_visit'  => 'last_visit',
         ];
@@ -64,7 +64,7 @@ class User extends Model
             self::addUserInSession();
             return true;
         } else {
-            $this->error = Lang::$uage['error_user_exist'];
+            $this->error = Lang::uage('error_user_exist');
             self::deleteUserFromSession();
             return false;
         }
@@ -89,7 +89,7 @@ class User extends Model
             self::addUserInSession();
             return $this;
         }
-        $this->error = Lang::$uage['error_verify'];
+        $this->error = Lang::uage('error_verify');
         return false;
     }
 

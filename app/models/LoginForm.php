@@ -19,8 +19,8 @@ class LoginForm extends BaseModel
 
     public function labels(){
         return [
-            'login' => Lang::$uage['login'],
-            'pass'  => Lang::$uage['pass'],
+            'login' => Lang::uage('login'),
+            'pass'  => Lang::uage('pass'),
         ];
     }
 

@@ -44,14 +44,14 @@ class UserController extends Controller
             } else {
                 $this->redirect(['user', 'registration'],[
                     'login' => isset($loginForm->login) ? $loginForm->login : null,
-                    'error' => Lang::$uage['error_verify'],
+                    'error' => Lang::uage('error_verify'),
                     'captcha' => $this->newCaptcha()
                 ]);
             }
         } else {
             $this->redirect(['user', 'registration'], [
                 'login' => isset($loginForm->login) ? $loginForm->login : null,
-                'error' => Lang::$uage['error_verify'],
+                'error' => Lang::uage('error_verify'),
                 'captcha' => $this->newCaptcha()
             ]);
         }
