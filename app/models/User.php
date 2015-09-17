@@ -29,7 +29,7 @@ class User extends Model
         ];
     }
 
-    public function labelFields(){
+    public function labels(){
         return [
             'login' => Liw::$lang['label']['login'],
             'hash'  => Liw::$lang['label']['pass'],

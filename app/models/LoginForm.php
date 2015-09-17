@@ -17,7 +17,7 @@ class LoginForm extends BaseModel
         ];
     }
 
-    public function labelFields(){
+    public function labels(){
         return [
             'login' => Liw::$lang['label']['login'],
             'pass'  => Liw::$lang['label']['pass']
