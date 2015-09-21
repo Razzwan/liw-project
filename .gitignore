@@ -20,5 +20,6 @@ phpunit.xml
 /app/controllers/ArticleController.php
 /web/assets
 /web/index.test.php
-/l
+/app/logs
+
 

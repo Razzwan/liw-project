@@ -6,6 +6,7 @@ use liw\core\Lang;
  * @var $this object liw\core\base\View
  * @var $login string
  */
+
 ?>
 <!DOCTYPE html>
 <html lang="<?=$this->language?>">
