@@ -10,8 +10,6 @@ use Gregwar\Captcha\CaptchaBuilder;
 
 class UserController extends Controller
 {
-
-
     public function indexAction(){
         $this->render('index');
     }
@@ -27,7 +25,7 @@ class UserController extends Controller
         } else {
             $model = [
                 'error'   => $loginForm->error?:$user->error,
-                'login'   => isset($loginForm->login)?$loginForm->login: null,
+                'login'   => isset($loginForm->login) ? $loginForm->login : null,
                 'captcha' => $this->newCaptcha()
             ];
             $this->render('registration', $model);

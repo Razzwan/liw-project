@@ -1995,3 +1995,4 @@ Stack trace:
 21.09.2015 20:38:47 Error: WARNING [2]. require_once(/home/www/liw.loc/app/views/layouts/laddyojut.php): failed to open stream: No such file or directory. File: /home/www/liw.loc/app/logs/errors.log. Line: 151.
 21.09.2015 20:38:57 Error: WARNING [2]. require_once(/home/www/liw.loc/app/views/layouts/laddyojut.php): failed to open stream: No such file or directory. File: /home/www/liw.loc/app/logs/errors.log. Line: 151.
 21.09.2015 20:38:57 Error: WARNING [2]. require_once(/home/www/liw.loc/app/views/layouts/laddyojut.php): failed to open stream: No such file or directory. File: /home/www/liw.loc/app/logs/errors.log. Line: 151.
+22.09.2015 00:02:39 Error: ERROR [1]. Call to undefined function web\controllers\User(). File: /home/www/liw.loc/app/logs/errors.log. Line: 21.
