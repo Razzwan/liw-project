@@ -7,8 +7,6 @@ use web\models\User;
 
 class MainController extends Controller
 {
-    public $layout = 'layout';
-
     public function indexAction()
     {
         $this->render('index');

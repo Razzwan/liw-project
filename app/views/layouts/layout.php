@@ -8,7 +8,7 @@ use liw\core\Lang;
  */
 ?>
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="<?=$this->language?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,7 +100,6 @@ use liw\core\Lang;
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/js/jquery.js" type="text/javascript" ></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery-ui.min.js" type="text/javascript" ></script>
 <script src="/js/dev.js" type="text/javascript" ></script>
 <script src="/js/js.js" type="text/javascript" ></script>
 <script src="/js/captcha.js" type="text/javascript" ></script>
