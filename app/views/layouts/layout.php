@@ -99,7 +99,7 @@ use liw\core\Lang;
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery.js" type="text/javascript" ></script>
+<script src="/js/jquery.min.js" type="text/javascript" ></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/dev.js" type="text/javascript" ></script>
 <script src="/js/js.js" type="text/javascript" ></script>

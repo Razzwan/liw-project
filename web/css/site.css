@@ -77,13 +77,14 @@ footer{
     border: solid 2px #ff0000;
     background-color: #ffdddd;
     border-radius:3px;
-        -webkit-border-radius:3px;
-        -moz-border-radius:3px;
-        -khtml-border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -khtml-border-radius:3px;
     box-shadow: 0 0 14px #f00;
-        -moz-box-shadow: 0 0 14px #f00;
-        -webkit-box-shadow: 0 0 14px #f00;
+    -moz-box-shadow: 0 0 14px #f00;
+    -webkit-box-shadow: 0 0 14px #f00;
 }
+
 .indent50{
     padding-left: 50px;
     text-indent: -16px;

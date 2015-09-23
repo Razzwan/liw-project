@@ -61,3 +61,18 @@
     margin-top: -6px;
     width: 20px;
 }
+.error {
+    text-align: center;
+    margin: 50px auto 10px auto;
+    padding-top: 20px;
+    max-width: 600px;
+    border: solid 2px #ff0000;
+    background-color: #ffdddd;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    box-shadow: 0 0 14px #f00;
+    -moz-box-shadow: 0 0 14px #f00;
+    -webkit-box-shadow: 0 0 14px #f00;
+}
