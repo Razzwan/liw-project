@@ -4,7 +4,7 @@
 
 ### Люди принявшие участие в разработке: ###
 * [volter9](https://github.com/volter9) 20-30%
-* [Сергей](#) 5-15%
+* [Сергей](https://github.com/ricco381) 5-15%
 * [Razzwan](https://github.com/Razzwan) 50-70%
 
 
